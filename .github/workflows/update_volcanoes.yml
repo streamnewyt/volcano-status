@@ -1,0 +1,38 @@
+name: Atualizar Status dos Vulcoes
+
+on:
+  schedule:
+    # Executa todos os dias às 06:00 UTC (03:00 Horário de Brasília)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Permite disparar manualmente pelo botão "Run workflow" no GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  update-volcanoes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar Dependencias
+        run: npm install @google/generative-ai
+
+      - name: Executar Atualizacao com Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node update_volcanoes.mjs
+
+      - name: Commit e Push das Alteracoes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add volcano-status.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Atualizacao diaria de status dos vulcoes [skip ci]" && git push)
+
