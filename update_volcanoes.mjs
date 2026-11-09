@@ -52,24 +52,35 @@ Importante: Seja preciso e sóbrio; não invente erupções para vulcões calmos
 
 async function run() {
     try {
-        console.log("Iniciando consulta ao Gemini 1.5 Flash (v1)...");
-        // apiVersion: 'v1' garante compatibilidade idêntica ao backend Vercel
-        let model;
+        console.log("Consultando modelos disponíveis na Google AI para esta chave...");
+        let selectedModel = "gemini-2.0-flash";
+
         try {
-            model = genAI.getGenerativeModel({
-                model: "gemini-1.5-flash",
-                generationConfig: {
-                    responseMimeType: "application/json"
+            const listRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+            const listData = await listRes.json();
+            if (listData.models && Array.isArray(listData.models)) {
+                console.log("Modelos disponíveis para sua chave:", listData.models.map(m => m.name.replace("models/", "")).join(", "));
+                const found = listData.models.find(m => 
+                    m.supportedGenerationMethods?.includes("generateContent") && 
+                    m.name.includes("flash")
+                );
+                if (found) {
+                    selectedModel = found.name.replace("models/", "");
                 }
-            }, { apiVersion: "v1" });
+            } else if (listData.error) {
+                console.error("Erro da Google ao listar modelos:", listData.error);
+            }
         } catch (e) {
-            model = genAI.getGenerativeModel({
-                model: "gemini-1.5-flash",
-                generationConfig: {
-                    responseMimeType: "application/json"
-                }
-            });
+            console.warn("Não foi possível listar modelos dinamicamente, usando fallback:", e.message);
         }
+
+        console.log(`Usando modelo ativo: ${selectedModel}`);
+        const model = genAI.getGenerativeModel({
+            model: selectedModel,
+            generationConfig: {
+                responseMimeType: "application/json"
+            }
+        });
 
         const result = await model.generateContent(PROMPT);
         let text = result.response.text().trim();
