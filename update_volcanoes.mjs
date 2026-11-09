@@ -53,19 +53,20 @@ Importante: Seja preciso e sóbrio; não invente erupções para vulcões calmos
 async function run() {
     try {
         console.log("Consultando modelos disponíveis na Google AI para esta chave...");
-        let selectedModel = "gemini-2.0-flash";
+        let selectedModel = "gemini-3.8-flash";
 
         try {
             const listRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
             const listData = await listRes.json();
             if (listData.models && Array.isArray(listData.models)) {
-                console.log("Modelos disponíveis para sua chave:", listData.models.map(m => m.name.replace("models/", "")).join(", "));
-                const found = listData.models.find(m => 
-                    m.supportedGenerationMethods?.includes("generateContent") && 
-                    m.name.includes("flash")
-                );
-                if (found) {
-                    selectedModel = found.name.replace("models/", "");
+                const names = listData.models.map(m => m.name.replace("models/", ""));
+                if (names.includes("gemini-3.8-flash")) {
+                    selectedModel = "gemini-3.8-flash";
+                } else if (names.includes("gemini-flash-latest")) {
+                    selectedModel = "gemini-flash-latest";
+                } else {
+                    const fallback = names.find(n => n.includes("flash") && !n.includes("2.5") && !n.includes("1.5"));
+                    if (fallback) selectedModel = fallback;
                 }
             } else if (listData.error) {
                 console.error("Erro da Google ao listar modelos:", listData.error);
