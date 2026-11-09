@@ -52,13 +52,24 @@ Importante: Seja preciso e sóbrio; não invente erupções para vulcões calmos
 
 async function run() {
     try {
-        console.log("Iniciando consulta ao Gemini 1.5 Flash...");
-        const model = genAI.getGenerativeModel({
-            model: "gemini-1.5-flash",
-            generationConfig: {
-                responseMimeType: "application/json"
-            }
-        });
+        console.log("Iniciando consulta ao Gemini 1.5 Flash (v1)...");
+        // apiVersion: 'v1' garante compatibilidade idêntica ao backend Vercel
+        let model;
+        try {
+            model = genAI.getGenerativeModel({
+                model: "gemini-1.5-flash",
+                generationConfig: {
+                    responseMimeType: "application/json"
+                }
+            }, { apiVersion: "v1" });
+        } catch (e) {
+            model = genAI.getGenerativeModel({
+                model: "gemini-1.5-flash",
+                generationConfig: {
+                    responseMimeType: "application/json"
+                }
+            });
+        }
 
         const result = await model.generateContent(PROMPT);
         let text = result.response.text().trim();
