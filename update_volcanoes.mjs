@@ -1,7 +1,13 @@
 // update_volcanoes.mjs
-// Atualizador diário resiliente usando chamada direta à API REST do Google Gemini (sem depender de versões de SDK)
+// Atualizador diário resiliente usando chamada direta à API REST do Google Gemini
 import fs from 'fs';
 import path from 'path';
+import dns from 'node:dns';
+
+// Força IPv4 no Node para evitar bug clássico de conexão (fetch failed / hang) nos runners do GitHub Actions
+if (dns.setDefaultResultOrder) {
+    dns.setDefaultResultOrder('ipv4first');
+}
 
 const apiKey = process.env.GEMINI_API_KEY;
 if (!apiKey) {
@@ -47,13 +53,11 @@ Retorne ESTRITAMENTE um objeto JSON válido no seguinte formato com suporte mult
 }
 Importante: Seja preciso e sóbrio; não invente erupções para vulcões calmos.`;
 
-// Lista de modelos suportados para tentativa automática em cascata
 const MODELS_TO_TRY = [
-    "gemini-flash-latest",
     "gemini-3.8-flash",
+    "gemini-flash-latest",
     "gemini-3.5-flash",
-    "gemini-pro-latest",
-    "gemini-flash-lite-latest"
+    "gemini-pro-latest"
 ];
 
 async function generateWithFallback() {
@@ -64,13 +68,17 @@ async function generateWithFallback() {
         try {
             const res = await fetch(url, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'x-goog-api-key': apiKey
+                },
                 body: JSON.stringify({
                     contents: [{ parts: [{ text: PROMPT }] }],
                     generationConfig: {
                         responseMimeType: "application/json"
                     }
-                })
+                }),
+                signal: AbortSignal.timeout(35000) // Timeout de 35s por modelo para não travar
             });
 
             if (res.ok) {
@@ -82,10 +90,10 @@ async function generateWithFallback() {
                 }
             } else {
                 const errText = await res.text();
-                console.warn(`Modelo ${model} retornou HTTP ${res.status}: ${errText.substring(0, 150)}...`);
+                console.warn(`Modelo ${model} retornou HTTP ${res.status}: ${errText.substring(0, 150)}`);
             }
         } catch (e) {
-            console.warn(`Erro na requisição para ${model}:`, e.message);
+            console.warn(`Erro na tentativa de ${model}:`, e.message);
         }
     }
     throw new Error("Nenhum modelo da lista respondeu com sucesso.");
