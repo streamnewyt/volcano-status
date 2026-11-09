@@ -20,11 +20,11 @@ const VOLCANO_LIST = [
     "Cumbre Vieja", "Aso", "Sakurajima", "Semeru", "Lewotolo", "Tambora", 
     "Dukono", "Fagradalsfjall", "Katla", "Yellowstone", "Krakatau", "Spurr", 
     "Santa María", "Bromo", "Campi Flegrei", "Svartsengi", "Tokachi", 
-    "Whakaari / White Island", "Kirishima"
+    "Whakaari / White Island", "Kirishima", "Pacaya", "Mayon", "Puracé"
 ];
 
-const PROMPT = `Você é um vulcanólogo assistente internacional.
-Consulte as fontes oficiais mais recentes (Smithsonian Global Volcanism Program, USGS, INGV, JMA, PVMBG, IMO, CENAPRED, INSIVUMEH, GeoNet).
+const PROMPT = `Você é um vulcanólogo sênior internacional.
+Consulte as fontes oficiais mais recentes (Smithsonian Global Volcanism Program, USGS, INGV, JMA, PVMBG, IMO, CENAPRED, INSIVUMEH, GeoNet, PHIVOLCS, SGC).
 Para os seguintes vulcões:
 ${VOLCANO_LIST.join(', ')}
 
@@ -41,22 +41,25 @@ Retorne ESTRITAMENTE um objeto JSON válido no seguinte formato com suporte mult
       },
       "color": "Cor em hexadecimal: VERDE = #2ecc71, AMARELO = #f1c40f, LARANJA = #e67e22, VERMELHO = #e74c3c",
       "status": {
-        "pt-br": "Resumo de 1 frase (máx 25 palavras) em português da atividade mais recente",
-        "en": "1-sentence summary (max 25 words) in English of latest observed activity",
-        "es": "Resumen de 1 frase (máx 25 palabras) en español de la actividad reciente",
-        "id": "Ringkasan 1 kalimat (maks 25 kata) dalam bahasa Indonesia tentang aktivitas terbaru"
+        "pt-br": "Descrição precisa (máx 30 palavras) do estado real atual: especifique se há erupção efusiva (fluxos de lava), explosiva (cinzas/estromboliana), desgaseificação ou calma",
+        "en": "Precise description (max 30 words) of current real state: specify if effusive (lava flows), explosive (ash/strombolian), degassing or quiet",
+        "es": "Descripción precisa (máx 30 palabras) del estado real actual: especifique si hay erupción efusiva (flujos de lava), explosiva (cenizas/estromboliana), desgasificación o calma",
+        "id": "Deskripsi akurat (maks 30 kata) tentang status saat ini: sebutkan apakah efusif (aliran lava), eksplosif (abu/strombolian), pelepasan gas, atau tenang"
       },
       "report_date": "Data do relatório oficial (ex: DD/MM/AAAA)",
-      "source": "Observatório oficial (ex: INGV, USGS, PVMBG, Smithsonian)"
+      "source": "Observatório oficial (ex: INGV, USGS, PVMBG, IMO, Smithsonian)"
     }
   }
 }
-Importante: Seja preciso e sóbrio; não invente erupções para vulcões calmos.`;
+Instruções cruciais de precisão vulcanológica:
+- Para vulcões em erupção aberta (ex: Stromboli, Etna, Kilauea, Lewotolo, Semeru, Svartsengi), descreva explicitamente a atividade efusiva (derrames de lava) ou explosões estrombolianas.
+- Para vulcões em repouso ou calmos (ex: Yellowstone, Katla, Tambora), informe que a sismicidade e desgaseificação permanecem dentro dos níveis normais de base.
+- Seja sempre fiel ao estado observacional mais recente dos boletins oficiais.`;
 
 const MODELS_TO_TRY = [
+    "gemini-3.6-flash",
     "gemini-3.8-flash",
     "gemini-flash-latest",
-    "gemini-3.5-flash",
     "gemini-pro-latest"
 ];
 
