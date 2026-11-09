@@ -59,44 +59,64 @@ Instruções cruciais de precisão vulcanológica:
 const MODELS_TO_TRY = [
     "gemini-3.6-flash",
     "gemini-3.8-flash",
+    "gemini-2.5-flash",
     "gemini-flash-latest",
     "gemini-pro-latest"
 ];
 
 async function generateWithFallback() {
     for (const model of MODELS_TO_TRY) {
-        console.log(`Tentando gerar dados com o modelo: ${model}...`);
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-        
-        try {
-            const res = await fetch(url, {
-                method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'x-goog-api-key': apiKey
-                },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: PROMPT }] }],
-                    generationConfig: {
-                        responseMimeType: "application/json"
-                    }
-                }),
-                signal: AbortSignal.timeout(120000) // 2 minutos (120s) para garantir que gere tudo sem cancelar antes de concluir
-            });
+        const MAX_RETRIES = 3;
+        for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+            console.log(`Tentando modelo: ${model} (tentativa ${attempt}/${MAX_RETRIES})...`);
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+            
+            try {
+                const res = await fetch(url, {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'x-goog-api-key': apiKey
+                    },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: PROMPT }] }],
+                        generationConfig: {
+                            responseMimeType: "application/json"
+                        }
+                    }),
+                    signal: AbortSignal.timeout(120000) // 2 minutos (120s) por tentativa
+                });
 
-            if (res.ok) {
-                const data = await res.json();
-                const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-                if (text) {
-                    console.log(`Sucesso com o modelo: ${model}!`);
-                    return text;
+                if (res.ok) {
+                    const data = await res.json();
+                    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (text) {
+                        console.log(`✓ Sucesso com o modelo: ${model}!`);
+                        return text;
+                    }
+                } else {
+                    const errText = await res.text();
+                    console.warn(`Modelo ${model} retornou HTTP ${res.status}: ${errText.substring(0, 150)}`);
+
+                    // Se o Google estiver sob alta demanda momentânea (HTTP 503), aguarda alguns segundos e tenta novamente
+                    if (res.status === 503) {
+                        if (attempt < MAX_RETRIES) {
+                            const delaySec = attempt * 5;
+                            console.log(`Pico de tráfego no Google (503). Aguardando ${delaySec}s antes de retentar...`);
+                            await new Promise(r => setTimeout(r, delaySec * 1000));
+                            continue;
+                        }
+                    } else if (res.status === 429) {
+                        // Limite de taxa (429), não adianta insistir no mesmo modelo agora
+                        break;
+                    }
                 }
-            } else {
-                const errText = await res.text();
-                console.warn(`Modelo ${model} retornou HTTP ${res.status}: ${errText.substring(0, 150)}`);
+            } catch (e) {
+                console.warn(`Erro na tentativa ${attempt} de ${model}:`, e.message);
+                if (attempt < MAX_RETRIES) {
+                    await new Promise(r => setTimeout(r, 4000));
+                }
             }
-        } catch (e) {
-            console.warn(`Erro na tentativa de ${model}:`, e.message);
         }
     }
     throw new Error("Nenhum modelo da lista respondeu com sucesso.");
@@ -115,8 +135,14 @@ async function run() {
         fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), 'utf-8');
         console.log(`Sucesso final! volcano-status.json atualizado com ${Object.keys(data.volcanoes || {}).length} vulcões.`);
     } catch (err) {
-        console.error("Falha geral ao atualizar status dos vulcões:", err);
-        process.exit(1);
+        console.error("Falha ao atualizar via IA:", err);
+        const outputPath = path.resolve('volcano-status.json');
+        if (fs.existsSync(outputPath)) {
+            console.log("Aviso: Mantendo o volcano-status.json existente com segurança até a próxima execução.");
+            process.exit(0);
+        } else {
+            process.exit(1);
+        }
     }
 }
 
