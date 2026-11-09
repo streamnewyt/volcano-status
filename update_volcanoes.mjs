@@ -81,7 +81,7 @@ async function generateWithFallback() {
                         responseMimeType: "application/json"
                     }
                 }),
-                signal: AbortSignal.timeout(35000) // Timeout de 35s por modelo para não travar
+                signal: AbortSignal.timeout(120000) // 2 minutos (120s) para garantir que gere tudo sem cancelar antes de concluir
             });
 
             if (res.ok) {
