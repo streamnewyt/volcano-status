@@ -1,90 +1,90 @@
 {
-  "lastUpdated": "2026-11-08T23:50:11.846Z",
+  "lastUpdated": "2026-11-09T01:05:54.103Z",
   "volcanoes": {
     "Popocatépetl": {
       "alert": {
-        "pt-br": "AMARELO FASE 2",
-        "en": "YELLOW PHASE 2",
-        "es": "AMARILLO FASE 2",
-        "id": "WASPADA FASE 2"
-      },
-      "color": "#f1c40f",
-      "status": {
-        "pt-br": "Emissões contínuas de vapor d'água, gases vulcânicos e cinzas com dispersão a leste-nordeste.",
-        "en": "Continuous emissions of water vapor, volcanic gases, and ash dispersing east-northeast.",
-        "es": "Emisiones continuas de vapor de agua, gases volcánicos y ceniza con dispersión hacia el este-noreste.",
-        "id": "Emisi terus-menerus uap air, gas vulkanik, dan abu yang menyebar ke arah timur-timur laut."
-      },
-      "report_date": "08/11/2026",
-      "source": "CENAPRED / México"
-    },
-    "Kilauea": {
-      "alert": {
-        "pt-br": "ATENÇÃO (WATCH)",
-        "en": "WATCH",
-        "es": "VIGILANCIA (WATCH)",
-        "id": "WASPADA (WATCH)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Atividade efusiva intermitente na caldeira do cume e zona de fenda leste com sismicidade moderada.",
-        "en": "Intermittent effusive activity in summit caldera and East Rift Zone with moderate seismicity.",
-        "es": "Actividad efusiva intermitente en la caldera de la cumbre y zona de grieta este con sismicidad moderada.",
-        "id": "Aktivitas efusif intermiten di kaldera puncak dan Zona Rekahan Timur dengan kegempaan sedang."
-      },
-      "report_date": "07/11/2026",
-      "source": "USGS / HVO"
-    },
-    "Fuego": {
-      "alert": {
-        "pt-br": "LARANJA (ELEVADO)",
-        "en": "ORANGE (WATCH)",
-        "es": "NARANJA (ELEVADO)",
-        "id": "SIAGA (ORANGE)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Explosões estrombolianas frequentes (4 a 8 por hora) com plumas de cinzas até 4.800m.",
-        "en": "Frequent strombolian explosions (4-8 per hour) with ash plumes up to 4,800m.",
-        "es": "Explosiones estrombolianas frecuentes (4 a 8 por hora) con columnas de ceniza hasta 4.800m.",
-        "id": "Letusan strombolian sering terjadi (4-8 per jam) dengan kolom abu hingga ketinggian 4.800m."
-      },
-      "report_date": "08/11/2026",
-      "source": "INSIVUMEH / Guatemala"
-    },
-    "Poas": {
-      "alert": {
-        "pt-br": "AMARELO (AVISO)",
-        "en": "YELLOW (ADVISORY)",
-        "es": "AMARILLO (ADVERTENCIA)",
-        "id": "WASPADA (ADVISORY)"
-      },
-      "color": "#f1c40f",
-      "status": {
-        "pt-br": "Atividade freatomagmática intermitente na cratera ativa e forte emissão de dióxido de enxofre (SO₂).",
-        "en": "Intermittent phreatic activity in active crater and strong sulfur dioxide (SO₂) degassing.",
-        "es": "Actividad freática intermitente en el cráter activo y fuerte emisión de dióxido de azufre (SO₂).",
-        "id": "Aktivitas freatik intermiten di kawah aktif dan pelepasan gas belerang dioksida (SO₂) kuat."
-      },
-      "report_date": "06/11/2026",
-      "source": "OVSICORI-UNA / Costa Rica"
-    },
-    "Etna": {
-      "alert": {
-        "pt-br": "AMARELO (ATENÇÃO)",
-        "en": "YELLOW (ATTENTION)",
-        "es": "AMARILLO (ATENCIÓN)",
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
         "id": "WASPADA"
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Desgaseificação contínua no topo com episódios de tremor vulcânico na Cratera Sudeste.",
-        "en": "Continuous summit degassing with episodes of volcanic tremor at Southeast Crater.",
-        "es": "Desgasificación continua en la cumbre con episodios de tremor volcánico en el Cráter Sureste.",
-        "id": "Pelepasan gas terus-menerus di puncak dengan episode tremor vulkanik di Kawah Tenggara."
+        "pt-br": "Emissões contínuas de vapor de água, gases vulcânicos e moderadas quantidades de cinza observadas.",
+        "en": "Continuous emissions of water vapor, volcanic gases, and moderate amounts of ash observed.",
+        "es": "Emisiones continuas de vapor de agua, gases volcánicos y cantidades moderadas de ceniza observadas.",
+        "id": "Emisi berkelanjutan dari uap air, gas vulkanik, dan abu dalam jumlah sedang teramati."
+      },
+      "report_date": "08/11/2026",
+      "source": "CENAPRED"
+    },
+    "Kilauea": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Atividade eruptiva concentrada na caldeira do cume com flutuações na emissão de dióxido de enxofre.",
+        "en": "Eruptive activity concentrated within the summit caldera with fluctuating sulfur dioxide gas emissions.",
+        "es": "Actividad eruptiva concentrada en la caldera de la cumbre con fluctuaciones en emisiones de dióxido de azufre.",
+        "id": "Aktivitas erupsi terkonsentrasi di dalam kaldera puncak dengan fluktuasi emisi gas belerang dioksida."
+      },
+      "report_date": "08/11/2026",
+      "source": "USGS"
+    },
+    "Fuego": {
+      "alert": {
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
+      },
+      "color": "#e67e22",
+      "status": {
+        "pt-br": "Explosões estrombolianas frequentes gerando plumas de cinza e pequenos fluxos piroclásticos nas ravinas.",
+        "en": "Frequent strombolian explosions generating ash plumes and weak pyroclastic flows in ravines.",
+        "es": "Explosiones estrombolianas frecuentes que generan plumas de ceniza y flujos piroclásticos débiles.",
+        "id": "Ledakan strombolian sering terjadi menghasilkan kolom abu dan aliran piroklastik kecil di jurang."
+      },
+      "report_date": "08/11/2026",
+      "source": "INSIVUMEH"
+    },
+    "Poas": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Degasagem freatógena constante no lago hiperácido com emissão esporádica de material fino.",
+        "en": "Constant phreatic degassing at the hyperacid crater lake with sporadic fine ash emissions.",
+        "es": "Desgasificación freática constante en el lago hiperácido con emisiones esporádicas de ceniza fina.",
+        "id": "Pengeluaran gas freatik konstan di danau kawah hiper-asam dengan emisi abu halus yang sporadis."
       },
       "report_date": "07/11/2026",
-      "source": "INGV / Itália"
+      "source": "OVSICORI-UNA"
+    },
+    "Etna": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Atividade desgasificante variável nas crateras do cume acompanhada por tremores sísmicos moderados.",
+        "en": "Variable degassing activity at the summit craters accompanied by moderate seismic tremor.",
+        "es": "Actividad de desgasificación variable en los cráteres de la cumbre acompañada de tremor sísmico moderado.",
+        "id": "Aktivitas pengeluaran gas bervariasi di kawah puncak disertai tremor vulkanik sedang."
+      },
+      "report_date": "08/11/2026",
+      "source": "INGV"
     },
     "Stromboli": {
       "alert": {
@@ -95,336 +95,336 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Atividade estromboliana clássica regular nos respiradouros da área da cratera.",
-        "en": "Regular classic strombolian explosions from crater terrace vents.",
-        "es": "Actividad estromboliana clásica regular desde los respiraderos del área del cráter.",
-        "id": "Aktivitas strombolian klasik reguler dari ventilasi area kawah."
+        "pt-br": "Explosões estrombolianas de baixa a média intensidade persistentes nas aberturas da cratera summital.",
+        "en": "Persistent low to medium intensity strombolian explosions at the summit crater vents.",
+        "es": "Explosiones estrombolianas de intensidad baja a media persistentes en los cráteres del cumbre.",
+        "id": "Erupsi strombolian berintensitas rendah hingga sedang persisten di lubang kawah puncak."
       },
-      "report_date": "07/11/2026",
-      "source": "INGV / Itália"
+      "report_date": "08/11/2026",
+      "source": "INGV"
     },
     "Cumbre Vieja": {
       "alert": {
-        "pt-br": "VERDE (NORMAL)",
-        "en": "GREEN (NORMAL)",
-        "es": "VERDE (NORMAL)",
+        "pt-br": "VERDE",
+        "en": "GREEN",
+        "es": "VERDE",
         "id": "NORMAL"
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Fase pós-eruptiva estável. Desgaseificação residual monitorada em Puerto Naos.",
-        "en": "Stable post-eruptive phase. Residual degassing monitored in Puerto Naos.",
-        "es": "Fase post-eruptiva estable. Desgasificación residual monitoreada en Puerto Naos.",
-        "id": "Fase pasca-letusan stabil. Pelepasan gas sisa dipantau di Puerto Naos."
+        "pt-br": "Nível de atividade residual pós-eruptiva com desgaseificação residual e sismicidade basal fraca.",
+        "en": "Post-eruptive baseline activity with residual volcanic degassing and background level seismicity.",
+        "es": "Nivel de actividad residual post-eruptiva con desgasificación residual y sismicidad de fondo baja.",
+        "id": "Aktivitas dasar pasca-erupsi dengan pengeluaran gas sisa dan seismisitas latar belakang rendah."
       },
-      "report_date": "05/11/2026",
-      "source": "IGN / Espanha"
+      "report_date": "06/11/2026",
+      "source": "IGN"
     },
     "Aso": {
       "alert": {
-        "pt-br": "NÍVEL 2 (RESTRIÇÃO)",
-        "en": "LEVEL 2 (CRATER RESTRICTION)",
-        "es": "NIVEL 2 (RESTRICCIÓN)",
-        "id": "LEVEL 2 (WASPADA)"
-      },
-      "color": "#f1c40f",
-      "status": {
-        "pt-br": "Pequenas emissões de cinzas e vapor na cratera Nakadake nº 1. Acesso restrito a 1 km.",
-        "en": "Minor ash and steam emissions at Nakadake No. 1 crater. 1km access restriction.",
-        "es": "Pequeñas emisiones de ceniza y vapor en el cráter Nakadake nº 1. Acceso restringido a 1 km.",
-        "id": "Emisi abu dan uap kecil di kawah Nakadake No. 1. Akses dibatasi 1 km."
-      },
-      "report_date": "06/11/2026",
-      "source": "JMA / Japão"
-    },
-    "Sakurajima": {
-      "alert": {
-        "pt-br": "NÍVEL 3 (RESTRIÇÃO)",
-        "en": "LEVEL 3 (RESTRICTION)",
-        "es": "NIVEL 3 (RESTRICCIÓN)",
-        "id": "LEVEL 3 (SIAGA)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Atividade explosiva recorrente na cratera Minamidake com ejeção de bombas vulcânicas a até 1.300m.",
-        "en": "Recurrent explosive activity at Minamidake crater with volcanic bombs ejected up to 1,300m.",
-        "es": "Actividad explosiva recurrente en el cráter Minamidake con eyección de bombas volcánicas.",
-        "id": "Aktivitas letusan berulang di kawah Minamidake dengan lontaran bom vulkanik hingga 1.300m."
-      },
-      "report_date": "08/11/2026",
-      "source": "JMA / Japão"
-    },
-    "Semeru": {
-      "alert": {
-        "pt-br": "NÍVEL III (SIAGA)",
-        "en": "LEVEL III (ALERT)",
-        "es": "NIVEL III (ALERTA)",
-        "id": "LEVEL III (SIAGA)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Erupções estrombolianas frequentes na cratera Jonggring Saloko com colunas de cinzas até 1.000m.",
-        "en": "Frequent strombolian eruptions at Jonggring Saloko crater with ash columns up to 1,000m.",
-        "es": "Erupciones estrombolianas frecuentes en el cráter Jonggring Saloko con columnas de ceniza hasta 1.000m.",
-        "id": "Letusan strombolian sering terjadi di kawah Jonggring Saloko dengan kolom abu hingga 1.000m."
-      },
-      "report_date": "08/11/2026",
-      "source": "PVMBG / Indonésia"
-    },
-    "Lewotolo": {
-      "alert": {
-        "pt-br": "NÍVEL III (SIAGA)",
-        "en": "LEVEL III (ALERT)",
-        "es": "NIVEL III (ALERTA)",
-        "id": "LEVEL III (SIAGA)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Atividade explosiva persistente e fluxo de lava no setor sudeste do cume.",
-        "en": "Persistent explosive activity and active lava flow on southeastern summit flank.",
-        "es": "Actividad explosiva persistente y flujo de lava en el flanco sureste de la cumbre.",
-        "id": "Aktivitas letusan persisten dan aliran lava aktif di lereng tenggara puncak."
-      },
-      "report_date": "07/11/2026",
-      "source": "PVMBG / Indonésia"
-    },
-    "Tambora": {
-      "alert": {
-        "pt-br": "NÍVEL I (NORMAL)",
-        "en": "LEVEL I (NORMAL)",
-        "es": "NIVEL I (NORMAL)",
-        "id": "LEVEL I (NORMAL)"
-      },
-      "color": "#2ecc71",
-      "status": {
-        "pt-br": "Níveis de sismicidade e desgaseificação de fundo dentro da normalidade.",
-        "en": "Background seismicity and minor fumarolic degassing within normal baselines.",
-        "es": "Sismicidad de fondo y desgasificación fumarólica dentro de niveles normales.",
-        "id": "Tingkat kegempaan latar belakang dan pelepasan gas fumarol dalam batas normal."
-      },
-      "report_date": "03/11/2026",
-      "source": "PVMBG / Indonésia"
-    },
-    "Dukono": {
-      "alert": {
-        "pt-br": "NÍVEL II (WASPADA)",
-        "en": "LEVEL II (ADVISORY)",
-        "es": "NIVEL II (ATENCIÓN)",
-        "id": "LEVEL II (WASPADA)"
-      },
-      "color": "#f1c40f",
-      "status": {
-        "pt-br": "Emissão quase contínua de cinzas vulcânicas subindo entre 1.000m e 2.000m acima da cratera.",
-        "en": "Near-continuous volcanic ash emissions rising 1,000m to 2,000m above crater rim.",
-        "es": "Emisión casi continua de cenizas volcánicas elevándose entre 1.000m y 2.000m sobre el cráter.",
-        "id": "Emisi abu vulkanik hampir terus menerus membubung 1.000m hingga 2.000m di atas puncak kawah."
-      },
-      "report_date": "08/11/2026",
-      "source": "PVMBG / Indonésia"
-    },
-    "Fagradalsfjall": {
-      "alert": {
-        "pt-br": "VERDE (NORMAL)",
-        "en": "GREEN (NORMAL)",
-        "es": "VERDE (NORMAL)",
-        "id": "NORMAL"
-      },
-      "color": "#2ecc71",
-      "status": {
-        "pt-br": "Inativo no momento; tensão tectônica transferida para a linha de fissuras de Svartsengi.",
-        "en": "Currently dormant; volcanic stress shifted to Svartsengi fissure swarm.",
-        "es": "Actualmente inactivo; el estrés tectónico se ha trasladado al sistema fisural de Svartsengi.",
-        "id": "Saat ini tidak aktif; tekanan vulkanik telah berpindah ke sistem rekahan Svartsengi."
-      },
-      "report_date": "04/11/2026",
-      "source": "IMO / Islândia"
-    },
-    "Katla": {
-      "alert": {
-        "pt-br": "VERDE (NORMAL)",
-        "en": "GREEN (NORMAL)",
-        "es": "VERDE (NORMAL)",
-        "id": "NORMAL"
-      },
-      "color": "#2ecc71",
-      "status": {
-        "pt-br": "Sismicidade subglacial típica em níveis de fundo, sem sinais de intrusão magmática.",
-        "en": "Typical baseline subglacial seismicity, no signs of magma intrusion.",
-        "es": "Sismicidad subglacial típica en niveles de fondo, sin signos de intrusión de magma.",
-        "id": "Kegempaan subglasial normal, tidak ada tanda-tanda intrusi magma."
-      },
-      "report_date": "05/11/2026",
-      "source": "IMO / Islândia"
-    },
-    "Yellowstone": {
-      "alert": {
-        "pt-br": "VERDE (NORMAL)",
-        "en": "GREEN (NORMAL)",
-        "es": "VERDE (NORMAL)",
-        "id": "NORMAL"
-      },
-      "color": "#2ecc71",
-      "status": {
-        "pt-br": "Sismicidade e deformação do solo dentro das variações históricas normais.",
-        "en": "Seismicity and ground deformation within normal historical background ranges.",
-        "es": "Sismicidad y deformación del suelo dentro de los rangos históricos normales.",
-        "id": "Kegempaan dan deformasi tanah dalam rentang historis normal."
-      },
-      "report_date": "01/11/2026",
-      "source": "USGS / YVO"
-    },
-    "Krakatau": {
-      "alert": {
-        "pt-br": "NÍVEL III (SIAGA)",
-        "en": "LEVEL III (ALERT)",
-        "es": "NIVEL III (ALERTA)",
-        "id": "LEVEL III (SIAGA)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Pequenas explosões estrombolianas intermitentes no Anak Krakatau com plumas de cinzas.",
-        "en": "Intermittent minor strombolian explosions at Anak Krakatau with ash plumes.",
-        "es": "Pequeñas explosiones estrombolianas intermitentes en Anak Krakatau con columnas de ceniza.",
-        "id": "Letusan strombolian kecil intermiten di Anak Krakatau dengan kolom abu."
-      },
-      "report_date": "06/11/2026",
-      "source": "PVMBG / Indonésia"
-    },
-    "Spurr": {
-      "alert": {
-        "pt-br": "AMARELO (ADVISORY)",
-        "en": "YELLOW (ADVISORY)",
-        "es": "AMARILLO (ADVISORY)",
-        "id": "WASPADA (ADVISORY)"
-      },
-      "color": "#f1c40f",
-      "status": {
-        "pt-br": "Enxames sísmicos rasos e leve elevação de temperatura na cratera sob monitoramento próximo.",
-        "en": "Shallow seismic swarms and slight heating in summit crater lake under close watch.",
-        "es": "Enjambres sísmicos superficiales y ligero aumento térmico en el cráter bajo vigilancia.",
-        "id": "Kawanan gempa dangkal dan sedikit kenaikan suhu di kawah puncak dalam pemantauan ketat."
-      },
-      "report_date": "07/11/2026",
-      "source": "AVO / USGS"
-    },
-    "Santa María": {
-      "alert": {
-        "pt-br": "LARANJA (ELEVADO)",
-        "en": "ORANGE (WATCH)",
-        "es": "NARANJA (ELEVADO)",
-        "id": "SIAGA (ORANGE)"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Crescimento contínuo de domo de lava no complexo Santiaguito com explosões fracas a moderadas.",
-        "en": "Continuous lava dome extrusion at Santiaguito complex with weak to moderate explosions.",
-        "es": "Crecimiento continuo del domo de lava en el complejo Santiaguito con explosiones moderadas.",
-        "id": "Pertumbuhan kubah lava berkelanjutan di kompleks Santiaguito dengan letusan sedang."
-      },
-      "report_date": "07/11/2026",
-      "source": "INSIVUMEH / Guatemala"
-    },
-    "Bromo": {
-      "alert": {
-        "pt-br": "NÍVEL II (WASPADA)",
-        "en": "LEVEL II (ADVISORY)",
-        "es": "NIVEL II (ATENCIÓN)",
-        "id": "LEVEL II (WASPADA)"
-      },
-      "color": "#f1c40f",
-      "status": {
-        "pt-br": "Emissão de vapor e gases espessos com leve odor de enxofre; raio de exclusão de 1 km.",
-        "en": "White steam and thick gas emissions with faint sulfur smell; 1km exclusion zone.",
-        "es": "Emisión de vapor y gases densos con ligero olor a azufre; radio de exclusión de 1 km.",
-        "id": "Emisi asap putih tebal dengan bau belerang ringan; radius bahaya 1 km dari kawah aktif."
-      },
-      "report_date": "06/11/2026",
-      "source": "PVMBG / Indonésia"
-    },
-    "Campi Flegrei": {
-      "alert": {
-        "pt-br": "AMARELO (ATENÇÃO)",
-        "en": "YELLOW (ATTENTION)",
-        "es": "AMARILLO (ATENCIÓN)",
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
         "id": "WASPADA"
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Deformação do solo por bradisismo e enxames sísmicos rasos contínuos na área de Pozzuoli.",
-        "en": "Bradyseismic ground uplift and recurrent shallow seismic swarms in Pozzuoli area.",
-        "es": "Elevación bradisísmica del suelo y enjambres sísmicos someros continuos en Pozzuoli.",
-        "id": "Pengangkatan tanah bradiseismik dan kawanan gempa dangkal berulang di Pozzuoli."
+        "pt-br": "Pequena atividade fumarólica e tremores vulkanáticos dentro da cratera Nakadake No. 1.",
+        "en": "Minor fumarolic activity and volcanic tremor detected within the Nakadake No. 1 crater.",
+        "es": "Pequeña actividad fumarólica y tremor volcánico detectado dentro del cráter Nakadake No. 1.",
+        "id": "Aktivitas fumarol kecil dan tremor vulkanik terdeteksi di dalam kawah Nakadake No. 1."
       },
-      "report_date": "07/11/2026",
-      "source": "INGV / Observatório Vesuviano"
+      "report_date": "08/11/2026",
+      "source": "JMA"
     },
-    "Svartsengi": {
+    "Sakurajima": {
       "alert": {
-        "pt-br": "LARANJA (ELEVADO)",
-        "en": "ORANGE (WATCH)",
-        "es": "NARANJA (ELEVADO)",
-        "id": "SIAGA (ORANGE)"
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
       },
       "color": "#e67e22",
       "status": {
-        "pt-br": "Acúmulo de magma e deformação contínua sob Svartsengi com risco elevado de nova erupção.",
-        "en": "Ongoing magma accumulation and ground uplift under Svartsengi with elevated eruption risk.",
-        "es": "Acumulación de magma y deformación continua bajo Svartsengi con alto riesgo de nueva erupción.",
-        "id": "Akumulasi magma dan pengangkatan tanah terus berlanjut di bawah Svartsengi."
+        "pt-br": "Explosões eruptivas frequentes na cratera Minamidake expelindo cinzas e balísticos vulcânicos.",
+        "en": "Frequent eruptive explosions at Minamidake crater ejecting volcanic ash and ballistic blocks.",
+        "es": "Explosiones eruptivas frecuentes en el cráter Minamidake expulsando ceniza y bloques balísticos.",
+        "id": "Erupsi ledakan sering terjadi di kawah Minamidake melontarkan abu vulkanik dan material pijar."
       },
       "report_date": "08/11/2026",
-      "source": "IMO / Islândia"
+      "source": "JMA"
     },
-    "Tokachi": {
+    "Semeru": {
       "alert": {
-        "pt-br": "NÍVEL 1 (NORMAL)",
-        "en": "LEVEL 1 (NORMAL)",
-        "es": "NIVEL 1 (NORMAL)",
-        "id": "LEVEL 1 (NORMAL)"
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
+      },
+      "color": "#e67e22",
+      "status": {
+        "pt-br": "Erupções ash-burst periódicas e pequenos fluxos piroclásticos descendo pela ravina Besuk Kobokan.",
+        "en": "Periodic eruptive ash bursts and small pyroclastic flows traveling down the Besuk Kobokan ravine.",
+        "es": "Erupciones periódicas de ceniza y pequeños flujos piroclásticos descendiendo por el barranco Besuk Kobokan.",
+        "id": "Letupan abu erupsi periodik dan aliran piroklastik kecil meluncur ke tenggara Besuk Kobokan."
+      },
+      "report_date": "08/11/2026",
+      "source": "PVMBG"
+    },
+    "Lewotolo": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Erupções estrombolianas esporádicas produzindo colunas de cinza de baixa altitude no cume.",
+        "en": "Sporadic strombolian eruptions producing low-altitude ash plumes above the summit crater.",
+        "es": "Erupciones estrombolianas esporádicas produciendo columnas de ceniza de baja altura en la cumbre.",
+        "id": "Erupsi strombolian sporadis menghasilkan kolom abu berketinggian rendah di atas kawah puncak."
+      },
+      "report_date": "08/11/2026",
+      "source": "PVMBG"
+    },
+    "Tambora": {
+      "alert": {
+        "pt-br": "VERDE",
+        "en": "GREEN",
+        "es": "VERDE",
+        "id": "NORMAL"
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Atividade geotermal e desgaseificação de fumarolas estáveis na cratera 62-2.",
-        "en": "Stable geothermal and fumarolic degassing at 62-2 crater.",
-        "es": "Actividad geotérmica y desgasificación fumarólica estables en el cráter 62-2.",
-        "id": "Aktivitas panas bumi dan pelepasan gas fumarol stabil di kawah 62-2."
+        "pt-br": "Nenhuma deformação ou sismicidade anômala registrada; atividade mantida nos níveis de base.",
+        "en": "No anomalous deformation or seismicity recorded; volcanic activity remains at baseline levels.",
+        "es": "No se registra deformación ni sismicidad anómala; la actividad se mantiene en niveles base.",
+        "id": "Tidak ada deformasi atau seismisitas anomali yang tercatat; aktivitas vulkanik tetap normal."
       },
       "report_date": "05/11/2026",
-      "source": "JMA / Japão"
+      "source": "PVMBG"
+    },
+    "Dukono": {
+      "alert": {
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
+      },
+      "color": "#e67e22",
+      "status": {
+        "pt-br": "Atividade eruptiva contínua com emissão persistente de plumas de cinzas espessas a médias altitudes.",
+        "en": "Continuous eruptive activity with persistent emissions of thick ash plumes to medium altitudes.",
+        "es": "Actividad eruptiva continua con emisión persistente de plumas de ceniza densa a altitudes medias.",
+        "id": "Aktivitas erupsi berlanjut dengan emisi konstan kolom abu tebal hingga ketinggian sedang."
+      },
+      "report_date": "08/11/2026",
+      "source": "PVMBG"
+    },
+    "Fagradalsfjall": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Acúmulo magmático subterrâneo e sismicidade intrusiva moderada no sistema vulcânico de Reykjanes.",
+        "en": "Subsurface magma accumulation and moderate intrusive seismicity in the Reykjanes volcanic system.",
+        "es": "Acumulación de magma subterráneo y sismicidad intrusiva moderada en el sistema volcánico de Reykjanes.",
+        "id": "Akumulasi magma bawah permukaan dan seismisitas intrusif sedang di sistem vulkanik Reykjanes."
+      },
+      "report_date": "08/11/2026",
+      "source": "IMO"
+    },
+    "Katla": {
+      "alert": {
+        "pt-br": "VERDE",
+        "en": "GREEN",
+        "es": "VERDE",
+        "id": "NORMAL"
+      },
+      "color": "#2ecc71",
+      "status": {
+        "pt-br": "Sismicidade glaciar e microsseísmica normais sem sinais de intrusão magmática iminente.",
+        "en": "Normal glacial and microseismic activity without signs of imminent magmatic intrusion.",
+        "es": "Sismicidad glaciar y micro-sísmica normal sin signos de intrusión magmática inminente.",
+        "id": "Aktivitas mikroseismik dan glasiologi normal tanpa tanda-tanda intrusi magma yang akan datang."
+      },
+      "report_date": "07/11/2026",
+      "source": "IMO"
+    },
+    "Yellowstone": {
+      "alert": {
+        "pt-br": "VERDE",
+        "en": "GREEN",
+        "es": "VERDE",
+        "id": "NORMAL"
+      },
+      "color": "#2ecc71",
+      "status": {
+        "pt-br": "Sismicidade de fundo e deformação do solo dentro dos padrões históricos normais da caldeira.",
+        "en": "Background seismicity and ground deformation remain within historical baseline levels for the caldera.",
+        "es": "Sismicidad de fondo y deformación del terreno dentro de los patrones históricos normales de la caldera.",
+        "id": "Seismisitas latar belakang dan deformasi tanah tetap berada dalam tingkat normal historis kaldera."
+      },
+      "report_date": "01/11/2026",
+      "source": "USGS"
+    },
+    "Krakatau": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Emissões ocasionais de plumas de gás e tremores vulcânicos esporádicos no Anak Krakatau.",
+        "en": "Occasional gas plume emissions and sporadic volcanic tremor at Anak Krakatau island.",
+        "es": "Emisiones ocasionales de columnas de gas y tremor volcánico esporádico en Anak Krakatau.",
+        "id": "Emisi hembusan gas sesekali dan tremor vulkanik sporadis di Anak Krakatau."
+      },
+      "report_date": "08/11/2026",
+      "source": "PVMBG"
+    },
+    "Spurr": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Sismicidade ligeiramente elevada e deformação do solo monitoradas continuamente sob o edifício vulcânico.",
+        "en": "Slightly elevated seismicity and ground deformation monitored under the volcano edifice.",
+        "es": "Sismicidad ligeramente elevada y deformación del terreno monitoreadas bajo el edificio volcánico.",
+        "id": "Seismisitas yang sedikit meningkat dan deformasi tanah dipantau di bawah tubuh gunung api."
+      },
+      "report_date": "07/11/2026",
+      "source": "USGS"
+    },
+    "Santa María": {
+      "alert": {
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
+      },
+      "color": "#e67e22",
+      "status": {
+        "pt-br": "Extrusão contínua de lava no domo Santiaguito com pequenas avalanches de incandescência e cinzas.",
+        "en": "Continuous lava dome extrusion at Santiaguito with small glowing avalanches and ash emissions.",
+        "es": "Extrusión continua de lava en el domo Santiaguito con avalanchas incandescentes y ceniza.",
+        "id": "Ekstrusi kubah lava berlanjut di Santiaguito dengan guguran lava pijar kecil dan emisi abu."
+      },
+      "report_date": "08/11/2026",
+      "source": "INSIVUMEH"
+    },
+    "Bromo": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Emissão de pluma branca e sulfurosa da cratera com tremores vulcânicos contínuos de baixa amplitude.",
+        "en": "White sulfurous plume emission from the crater with continuous low-amplitude volcanic tremor.",
+        "es": "Emisión de pluma blanca sulfurosa del cráter con tremor volcánico continuo de baja amplitud.",
+        "id": "Emisi asap kawah putih belerang dengan tremor vulkanik menerus beramplitudo rendah."
+      },
+      "report_date": "08/11/2026",
+      "source": "PVMBG"
+    },
+    "Campi Flegrei": {
+      "alert": {
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
+      },
+      "color": "#f1c40f",
+      "status": {
+        "pt-br": "Crise bradissísmica em curso com tremores frequentes de baixa magnitude e elevação do solo.",
+        "en": "Ongoing bradyseismic crisis with frequent low-magnitude earthquakes and ground uplift.",
+        "es": "Crisis bradísismica en curso con terremotos frecuentes de baja magnitud y elevación del terreno.",
+        "id": "Krisis bradiseismik berlanjut dengan gempa dangkal sering berintensitas rendah dan pengangkatan tanah."
+      },
+      "report_date": "08/11/2026",
+      "source": "INGV"
+    },
+    "Svartsengi": {
+      "alert": {
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
+      },
+      "color": "#e67e22",
+      "status": {
+        "pt-br": "Elevado acúmulo de magma e sismicidade associada com alto risco de erupção fissural iminente.",
+        "en": "High rate of magma inflation and seismicity with ongoing hazard for fissure eruptions.",
+        "es": "Alta acumulación de magma y sismicidad con riesgo continuo de erupciones fisurales.",
+        "id": "Akumulasi magma tinggi dan seismisitas terkait dengan risiko erupsi celah yang terus berlangsung."
+      },
+      "report_date": "08/11/2026",
+      "source": "IMO"
+    },
+    "Tokachi": {
+      "alert": {
+        "pt-br": "VERDE",
+        "en": "GREEN",
+        "es": "VERDE",
+        "id": "NORMAL"
+      },
+      "color": "#2ecc71",
+      "status": {
+        "pt-br": "Atividade fumarólica fraca na cratera 62-2 dentro dos parâmetros normais observados.",
+        "en": "Weak fumarolic emissions at 62-2 crater within normal background parameters.",
+        "es": "Emisiones fumarólicas débiles en el cráter 62-2 dentro de parámetros normales.",
+        "id": "Emisi fumarol lemah di kawah 62-2 berada dalam parameter normal latar belakang."
+      },
+      "report_date": "07/11/2026",
+      "source": "JMA"
     },
     "Whakaari / White Island": {
       "alert": {
-        "pt-br": "NÍVEL 2 (INQUIETAÇÃO)",
-        "en": "LEVEL 2 (MODERATE UNREST)",
-        "es": "NIVEL 2 (INQUIETUD)",
-        "id": "LEVEL 2 (WASPADA)"
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
       },
-      "color": "#f1c40f",
+      "color": "#e67e22",
       "status": {
-        "pt-br": "Emissões intermitentes de cinzas e vapor na cratera ativa; tremor vulcânico moderado.",
-        "en": "Intermittent minor ash and gas emissions from active vents; volcanic tremor moderate.",
-        "es": "Emisiones intermitentes de ceniza y vapor en el cráter activo; tremor volcánico moderado.",
-        "id": "Emisi abu dan gas intermiten dari ventilasi aktif; tremor vulkanik sedang."
+        "pt-br": "Erupção menor contínua gerando plumas de cinzas de baixa altitude e emissão de gás vulcânico.",
+        "en": "Minor eruptive activity producing low-level volcanic ash plumes and gas emissions.",
+        "es": "Erupción menor continua produciendo plumas de ceniza de baja altura y gases volcánicos.",
+        "id": "Erupsi kecil berlanjut menghasilkan kolom abu berketinggian rendah dan emisi gas vulkanik."
       },
-      "report_date": "07/11/2026",
-      "source": "GeoNet / Nova Zelândia"
+      "report_date": "08/11/2026",
+      "source": "GeoNet"
     },
     "Kirishima": {
       "alert": {
-        "pt-br": "NÍVEL 2 (RESTRIÇÃO)",
-        "en": "LEVEL 2 (CRATER RESTRICTION)",
-        "es": "NIVEL 2 (RESTRICCIÓN)",
-        "id": "LEVEL 2 (WASPADA)"
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Sismicidade vulcânica leve e desgaseificação no vulcão Shinmoedake.",
-        "en": "Low-level volcanic seismicity and steam emissions at Shinmoedake.",
-        "es": "Baja sismicidad volcánica y emisiones de vapor en Shinmoedake.",
-        "id": "Kegempaan vulkanik tingkat rendah dan emisi uap di Shinmoedake."
+        "pt-br": "Sismicidade vulcânica ligeiramente elevada ao redor de Shinmoedake e cratera Ebino.",
+        "en": "Slightly elevated volcanic seismicity around Shinmoedake and the Ebino crater area.",
+        "es": "Sismicidad volcánica ligeramente elevada alrededor de Shinmoedake y el área del cráter Ebino.",
+        "id": "Seismisitas vulkanik sedikit meningkat di sekitar Shinmoedake dan area kawah Ebino."
       },
-      "report_date": "06/11/2026",
-      "source": "JMA / Japão"
+      "report_date": "07/11/2026",
+      "source": "JMA"
     }
   }
 }
