@@ -1,6 +1,5 @@
 // update_volcanoes.mjs
-// Executado diariamente pelo GitHub Actions para atualizar volcano-status.json usando o Gemini Flash
-import { GoogleGenerativeAI } from '@google/generative-ai';
+// Atualizador diário resiliente usando chamada direta à API REST do Google Gemini (sem depender de versões de SDK)
 import fs from 'fs';
 import path from 'path';
 
@@ -9,8 +8,6 @@ if (!apiKey) {
     console.error("ERRO: GEMINI_API_KEY não configurada nos Secrets do repositório.");
     process.exit(1);
 }
-
-const genAI = new GoogleGenerativeAI(apiKey);
 
 const VOLCANO_LIST = [
     "Popocatépetl", "Kilauea", "Fuego", "Poas", "Etna", "Stromboli", 
@@ -25,7 +22,7 @@ Consulte as fontes oficiais mais recentes (Smithsonian Global Volcanism Program,
 Para os seguintes vulcões:
 ${VOLCANO_LIST.join(', ')}
 
-Retorne ESTRITAMENTE um objeto JSON válido (sem tags markdown \`\`\`json) no seguinte formato exato com suporte multilíngue (pt-br, en, es, id):
+Retorne ESTRITAMENTE um objeto JSON válido no seguinte formato com suporte multilíngue (pt-br, en, es, id):
 {
   "lastUpdated": "${new Date().toISOString()}",
   "volcanoes": {
@@ -50,51 +47,64 @@ Retorne ESTRITAMENTE um objeto JSON válido (sem tags markdown \`\`\`json) no se
 }
 Importante: Seja preciso e sóbrio; não invente erupções para vulcões calmos.`;
 
-async function run() {
-    try {
-        console.log("Consultando modelos disponíveis na Google AI para esta chave...");
-        let selectedModel = "gemini-3.8-flash";
+// Lista de modelos suportados para tentativa automática em cascata
+const MODELS_TO_TRY = [
+    "gemini-flash-latest",
+    "gemini-3.8-flash",
+    "gemini-3.5-flash",
+    "gemini-pro-latest",
+    "gemini-flash-lite-latest"
+];
 
+async function generateWithFallback() {
+    for (const model of MODELS_TO_TRY) {
+        console.log(`Tentando gerar dados com o modelo: ${model}...`);
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+        
         try {
-            const listRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
-            const listData = await listRes.json();
-            if (listData.models && Array.isArray(listData.models)) {
-                const names = listData.models.map(m => m.name.replace("models/", ""));
-                if (names.includes("gemini-3.8-flash")) {
-                    selectedModel = "gemini-3.8-flash";
-                } else if (names.includes("gemini-flash-latest")) {
-                    selectedModel = "gemini-flash-latest";
-                } else {
-                    const fallback = names.find(n => n.includes("flash") && !n.includes("2.5") && !n.includes("1.5"));
-                    if (fallback) selectedModel = fallback;
+            const res = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: PROMPT }] }],
+                    generationConfig: {
+                        responseMimeType: "application/json"
+                    }
+                })
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (text) {
+                    console.log(`Sucesso com o modelo: ${model}!`);
+                    return text;
                 }
-            } else if (listData.error) {
-                console.error("Erro da Google ao listar modelos:", listData.error);
+            } else {
+                const errText = await res.text();
+                console.warn(`Modelo ${model} retornou HTTP ${res.status}: ${errText.substring(0, 150)}...`);
             }
         } catch (e) {
-            console.warn("Não foi possível listar modelos dinamicamente, usando fallback:", e.message);
+            console.warn(`Erro na requisição para ${model}:`, e.message);
         }
+    }
+    throw new Error("Nenhum modelo da lista respondeu com sucesso.");
+}
 
-        console.log(`Usando modelo ativo: ${selectedModel}`);
-        const model = genAI.getGenerativeModel({
-            model: selectedModel,
-            generationConfig: {
-                responseMimeType: "application/json"
-            }
-        });
+async function run() {
+    try {
+        const rawJsonText = await generateWithFallback();
+        
+        let cleaned = rawJsonText.trim();
+        if (cleaned.startsWith('```json')) cleaned = cleaned.replace(/^```json\s*/i, '').replace(/```$/i, '').trim();
+        else if (cleaned.startsWith('```')) cleaned = cleaned.replace(/^```\s*/, '').replace(/```$/, '').trim();
 
-        const result = await model.generateContent(PROMPT);
-        let text = result.response.text().trim();
-
-        if (text.startsWith('```json')) text = text.replace(/^```json\s*/i, '').replace(/```$/i, '').trim();
-        else if (text.startsWith('```')) text = text.replace(/^```\s*/, '').replace(/```$/, '').trim();
-
-        const data = JSON.parse(text);
+        const data = JSON.parse(cleaned);
         const outputPath = path.resolve('volcano-status.json');
         fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), 'utf-8');
-        console.log(`Sucesso! Arquivo volcano-status.json atualizado com ${Object.keys(data.volcanoes || {}).length} vulcões.`);
+        console.log(`Sucesso final! volcano-status.json atualizado com ${Object.keys(data.volcanoes || {}).length} vulcões.`);
     } catch (err) {
-        console.error("Falha ao atualizar status dos vulcões:", err);
+        console.error("Falha geral ao atualizar status dos vulcões:", err);
         process.exit(1);
     }
 }
