@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T12:51:18.202Z",
+  "lastUpdated": "2026-11-15T13:18:52.112Z",
   "volcanoes": {
     "Popocatépetl": {
       "alert": {
@@ -10,12 +10,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Fase 2 amarela: emissões frequentes de vapor, gases vulcânicos e cinzas com explosões de baixa intensidade.",
-        "en": "Yellow Phase 2: frequent emissions of steam, volcanic gases, and minor ash plumes with low-intensity explosions.",
-        "es": "Fase 2 amarillo: emisiones frecuentes de vapor, gases volcánicos y cenizas con explosiones de baja intensidad.",
-        "id": "Kuning Fase 2: emisi uap, gas vulkanik, dan abu secara berkala dengan ledakan intensitas rendah."
+        "pt-br": "Atividade explosiva moderada com emissões contínuas de cinzas, vapor de água e gases vulcânicos.",
+        "en": "Moderate explosive activity with continuous ash emissions, water vapor, and volcanic gases.",
+        "es": "Actividad explosiva moderada con emisiones continuas de ceniza, vapor de agua y gases volcánicos.",
+        "id": "Aktivitas eksplosif sedang dengan emisi abu menerus, uap air, dan gas vulkanik."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "CENAPRED"
     },
     "Kilauea": {
@@ -27,29 +27,29 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Pausa temporária na erupção efusiva do cume. Desgaseificação vulcânica contínua e sismicidade em nível de fundo moderado.",
-        "en": "Temporary pause in effusive summit eruption. Persistent volcanic degassing and moderate background seismicity continuous.",
-        "es": "Pausa temporal en la erupción efusiva de la cumbre. Desgasificación continua y sismicidad en nivel base moderado.",
-        "id": "Jeda sementara pada erupsi efusif puncak. Pelepasan gas berkelanjutan dan seismisitas latar belakang moderat."
+        "pt-br": "Pausa na atividade eruptiva efusiva no topo; desgaseificação fraca e sismicidade em nível de base.",
+        "en": "Pause in summit effusive eruptive activity; weak degassing and baseline seismicity.",
+        "es": "Pausa en la actividad eruptiva efusiva de la cumbre; desgasificación débil y sismicidad de base.",
+        "id": "Jeda aktivitas erupsi efusif puncak; pelepasan gas lemah dan seismisitas latar belakang."
       },
-      "report_date": "13/11/2026",
+      "report_date": "14/11/2026",
       "source": "USGS"
     },
     "Fuego": {
       "alert": {
-        "pt-br": "LARANJA",
-        "en": "ORANGE",
-        "es": "NARANJA",
-        "id": "SIAGA"
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
       },
-      "color": "#e67e22",
+      "color": "#f1c40f",
       "status": {
-        "pt-br": "Atividade explosiva estromboliana contínua, gerando plumas de cinza diárias, avalanches nos flancos e incandescência noturna.",
-        "en": "Continuous strombolian explosive activity producing daily ash plumes, flank avalanches, and nighttime crater glow.",
-        "es": "Actividad explosiva estromboliana continua que genera plumas de ceniza diarias, avalanchas en flancos e incandescencia nocturna.",
-        "id": "Aktivitas eksplosif strombolian berkelanjutan, menghasilkan kolom abu harian, guguran lava, dan pijar kawah."
+        "pt-br": "Explosões estrombolianas fracas a moderadas, plumas de cinza e pequenos fluxos de lava ativos.",
+        "en": "Weak to moderate Strombolian explosions, ash plumes, and active small lava flows.",
+        "es": "Explosiones estrombolianas débiles a moderadas, plumas de ceniza y pequeños flujos de lava activos.",
+        "id": "Eksplosi strombolian lemah hingga sedang, kolom abu, dan aliran lava kecil yang aktif."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "INSIVUMEH"
     },
     "Poas": {
@@ -61,13 +61,13 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Desgaseificação fumarólica ativa na lagoa craterapressurizada com pequenas erupções freáticas ocasionais e emissão de SO2.",
-        "en": "Active fumarolic degassing from crater lake with occasional minor phreatic eruptions and elevated SO2 gas emissions.",
-        "es": "Desgasificación fumarólica activa en la laguna del cráter con pequeñas erupciones freáticas ocasionales y dióxido de azufre.",
-        "id": "Pelepasan gas fumarol aktif dari danau kawah dengan erupsi freatik kecil sesekali dan emisi SO2."
+        "pt-br": "Desgaseificação hidrotermal intensa com erupções freáticas ocasionais e emissão de dióxido de enxofre.",
+        "en": "Intense hydrothermal degassing with occasional phreatic eruptions and sulfur dioxide emissions.",
+        "es": "Desgasificación hidrotermal intensa con erupciones freáticas ocasionales y emisión de dióxido de azufre.",
+        "id": "Pelepasan gas hidrotermal intensif dengan erupsi freatik sesekali dan emisi belerang dioksida."
       },
-      "report_date": "12/11/2026",
-      "source": "Smithsonian / OVSICORI"
+      "report_date": "14/11/2026",
+      "source": "OVSICORI-UNA"
     },
     "Etna": {
       "alert": {
@@ -78,12 +78,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Atividade estromboliana intermitente nas crateras de cume com desgaseificação de cinzas e tremores vulcânicos flutuantes.",
-        "en": "Intermittent strombolian activity at summit craters accompanied by ash degassing and fluctuating volcanic tremor.",
-        "es": "Actividad estromboliana intermitente en los cráteres someros con desgasificación de cenizas y temblor volcánico variable.",
-        "id": "Aktivitas strombolian intermiten di kawah puncak disertai emisi abu dan tremor vulkanik yang berfluktuasi."
+        "pt-br": "Atividade estromboliana nas crateras do topo com derrames de lava efusivos intra-craterais e desgaseificação.",
+        "en": "Strombolian activity at summit craters with intra-crater effusive lava flows and degassing.",
+        "es": "Actividad estromboliana en los cráteres cumbrales con flujos de lava efusivos intracráter y desgasificación.",
+        "id": "Aktivitas strombolian di kawah puncak dengan aliran lava efusif intra-kawah dan pelepasan gas."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "INGV"
     },
     "Stromboli": {
@@ -95,12 +95,12 @@
       },
       "color": "#e67e22",
       "status": {
-        "pt-br": "Erupção estromboliana persistente com jorros de lava e ocasionais derrames efusivos ao longo da Sciara del Fuoco.",
-        "en": "Persistent strombolian eruption with active spattering and occasional lava flows channeled along Sciara del Fuoco.",
-        "es": "Erupción estromboliana persistente con salpicaduras de lava y flujos efusivos ocasionales por la Sciara del Fuoco.",
-        "id": "Erupsi strombolian berkelanjutan dengan lontaran lava dan sesekali aliran lava efusif sepanjang Sciara del Fuoco."
+        "pt-br": "Explosões estrombolianas persistentes e erupção efusiva ativa com derrames de lava na Sciara del Fuoco.",
+        "en": "Persistent Strombolian explosions and active effusive eruption with lava flows on Sciara del Fuoco.",
+        "es": "Explosiones estrombolianas me persistentes y erupción efusiva activa con flujos de lava en Sciara del Fuoco.",
+        "id": "Eksplosi strombolian persisten dan erupsi efusif aktif dengan aliran lava di Sciara del Fuoco."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "INGV"
     },
     "Cumbre Vieja": {
@@ -112,13 +112,13 @@
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Estado de repouso pós-eruptivo. Desgaseificação residual residual de dióxido de carbono e sismicidade em nível de base.",
-        "en": "Post-eruptive quiescent state. Residual carbon dioxide degassing and baseline seismic levels within normal parameters.",
-        "es": "Estado de reposo post-eruptivo. Desgasificación residual de dióxido de carbono y sismicidad dentro del nivel base.",
-        "id": "Kondisi tenang pasca-erupsi. Pelepasan gas karbon dioksida sisa dan aktivitas seismik berada pada tingkat normal."
+        "pt-br": "Estado de repouso pós-erupção; desgaseificação fumarólica residual e sismicidade em níveis de base.",
+        "en": "Post-eruptive quiescent state; residual fumarolic degassing and baseline seismicity levels.",
+        "es": "Estado de reposo posterior a la erupción; desgasificación fumarólica residual y sismicidad de base.",
+        "id": "Kondisi tenang pasca-erupsi; pelepasan gas fumarol sisa dan seismisitas tingkat dasar."
       },
-      "report_date": "10/11/2026",
-      "source": "Smithsonian"
+      "report_date": "12/11/2026",
+      "source": "IGN"
     },
     "Aso": {
       "alert": {
@@ -129,12 +129,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Nível de alerta 2: desgaseificação vulcânica elevada e tremores contínuos no cráter Nakadake No. 1.",
-        "en": "Alert Level 2: elevated volcanic gas emissions and continuous tremor at Nakadake Crater No. 1.",
-        "es": "Nivel de alerta 2: elevada emisión de gases volcánicos y temblor continuo en el cráter Nakadake No. 1.",
-        "id": "Tingkat Peringatan 2: peningkatan emisi gas vulkanik dan tremor berkelanjutan di Kawah Nakadake No. 1."
+        "pt-br": "Pequenas emissões de cinzas e desgaseificação vulcânica contínua na cratera Nakadake com tremor elevado.",
+        "en": "Minor ash emissions and continuous volcanic degassing at Nakadake crater with elevated tremor.",
+        "es": "Pequeñas emisiones de ceniza y desgasificación volcánica continua en el cráter Nakadake con temblor elevado.",
+        "id": "Emisi abu kecil dan pelepasan gas vulkanik menerus di kawah Nakadake dengan tremor meningkat."
       },
-      "report_date": "13/11/2026",
+      "report_date": "14/11/2026",
       "source": "JMA"
     },
     "Sakurajima": {
@@ -146,29 +146,29 @@
       },
       "color": "#e67e22",
       "status": {
-        "pt-br": "Nível de alerta 3: erupções vulcanianas frequentes na cratera Minamidake gerando colunas de cinzas e ejetos balísticos.",
-        "en": "Alert Level 3: frequent vulcanian explosive eruptions at Minamidake crater producing ash plumes and ballistic ejecta.",
-        "es": "Nivel de alerta 3: erupciones vulcanianas frecuentes en el cráter Minamidake generando plumas de ceniza y balísticos.",
-        "id": "Tingkat Peringatan 3: erupsi eksplosif vulkanik sering terjadi di kawah Minamidake menghasilkan kolom abu."
+        "pt-br": "Erupções explosivas frequentes na cratera Minamidake gerando plumas de cinza e balística vulcânica.",
+        "en": "Frequent explosive eruptions at Minamidake crater producing ash plumes and volcanic balistics.",
+        "es": "Erupciones explosivas frecuentes en el cráter Minamidake produciendo plumas de ceniza y balísticos.",
+        "id": "Erupsi eksplosif sering di kawah Minamidake menghasilkan kolom abu dan lontaran batu vulkanik."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "JMA"
     },
     "Semeru": {
       "alert": {
         "pt-br": "LARANJA",
-        "en": "SIAGA",
+        "en": "ORANGE",
         "es": "NARANJA",
         "id": "SIAGA"
       },
       "color": "#e67e22",
       "status": {
-        "pt-br": "Nível III (Siaga): erupção explosiva e efusiva com derrames de lava e fluxos piroclásticos ocasionais no vale Besuk Kobokan.",
-        "en": "Level III (Siaga): ongoing explosive-effusive eruption with lava flows and pyroclastic density currents down Besuk Kobokan.",
-        "es": "Nivel III (Siaga): erupción explosiva-efusiva con flujos de lava y corrientes piroclásticas hacia la quebrada Besuk Kobokan.",
-        "id": "Tingkat III (Siaga): erupsi eksplosif dan efusif terus berlanjut dengan aliran lava dan awan panas guguran."
+        "pt-br": "Erupção efusiva e explosiva contínua com fluxos de lava, avalanches de incandescência e plumas de cinza.",
+        "en": "Continuous effusive and explosive eruption with lava flows, incandescent avalanches, and ash plumes.",
+        "es": "Erupción efusiva y explosiva continua con flujos de lava, avalanchas incandescentes y plumas de ceniza.",
+        "id": "Erupsi efusif dan eksplosif menerus dengan aliran lava, guguran lava pijar, dan kolom abu."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "PVMBG"
     },
     "Lewotolo": {
@@ -180,12 +180,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Nível II (Waspada): explosões estrombolianas intermitentes com derrames de lava ativos restritos à zona do cume.",
-        "en": "Level II (Waspada): intermittent strombolian explosive events with active lava flows confined to the summit area.",
-        "es": "Nivel II (Waspada): explosiones estrombolianas intermitentes con flujos de lava activos restringidos a la zona somera.",
-        "id": "Tingkat II (Waspada): letupan strombolian intermiten dengan aliran lava aktif yang terbatas di area puncak."
+        "pt-br": "Explosões estrombolianas frequentes, derrame de lava intra-crateral e emissão de cinzas.",
+        "en": "Frequent Strombolian explosions, intra-crater lava flow effusion, and ash emissions.",
+        "es": "Explosiones estrombolianas frecuentes, efusión de flujo de lava intracráter y emisiones de ceniza.",
+        "id": "Eksplosi strombolian sering, lelehan aliran lava intra-kawah, dan emisi abu."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "PVMBG"
     },
     "Tambora": {
@@ -197,10 +197,10 @@
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Nível I (Normal): vulcão em calma absoluta com sismicidade dentro dos níveis de fundo e desgaseificação insignificante.",
-        "en": "Level I (Normal): volcano in baseline quiescent state with normal background seismicity and minimal degassing.",
-        "es": "Nivel I (Normal): volcán en calma absoluta con sismicidad en niveles base y desgasificación insignificante.",
-        "id": "Tingkat I (Normal): gunung api dalam kondisi tenang dengan seismisitas latar belakang normal dan pelepasan gas minimal."
+        "pt-br": "Vulcão calmo; sismicidade dentro dos níveis de base e desgaseificação fumarólica fraca na caldeira.",
+        "en": "Quiet volcano; seismicity within background baseline levels and weak fumarolic degassing in the caldera.",
+        "es": "Volcán calmo; sismicidad dentro de los niveles de base y desgasificación fumarólica débil en la caldera.",
+        "id": "Gunung api tenang; seismisitas dalam tingkat latar belakang dan pelepasan gas fumarol lemah di kaldera."
       },
       "report_date": "10/11/2026",
       "source": "PVMBG"
@@ -214,12 +214,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Nível II (Waspada): erupção explosiva contínua gerando colunas permanentes de cinzas e gases vulcânicos.",
-        "en": "Level II (Waspada): continuous explosive eruption generating ongoing volcanic ash columns and gas plumes.",
-        "es": "Nivel II (Waspada): erupción explosiva continua que genera columnas permanentes de ceniza volcánica y gases.",
-        "id": "Tingkat II (Waspada): erupsi eksplosif berkelanjutan menghasilkan kolom abu vulkanik dan gas secara terus-menerus."
+        "pt-br": "Erupção explosiva contínua com lançamentos de cinzas vulcânicas e plumas de gás persistentes.",
+        "en": "Continuous explosive eruption with volcanic ash discharge and persistent gas plumes.",
+        "es": "Erupción explosiva continua con descargas de ceniza volcánica y plumas de gas me persistentes.",
+        "id": "Erupsi eksplosif menerus dengan pelepasan abu vulkanik dan kolom gas persisten."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "PVMBG"
     },
     "Fagradalsfjall": {
@@ -231,12 +231,29 @@
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Inativo no momento. Sem emissão de lava ativa; sismicidade residual baixa enquanto a atividade se concentra em Svartsengi.",
-        "en": "Currently inactive. No active lava emission; low background seismicity while volcanic stress is concentrated at Svartsengi.",
-        "es": "Inactivo actualmente. Sin emisión de lava activa; sismicidad baja mientras la actividad se concentra en Svartsengi.",
-        "id": "Saat ini tidak aktif. Tidak ada emisi lava aktif; seismisitas latar belakang rendah."
+        "pt-br": "Atividade eruptiva pausada na zona de Fagradalsfjall; sismicidade baixa e desgaseificação residual.",
+        "en": "Paused eruptive activity in the Fagradalsfjall area; low seismicity and residual degassing.",
+        "es": "Actividad eruptiva pausada en la zona de Fagradalsfjall; sismicidad baja y desgasificación residual.",
+        "id": "Aktivitas erupsi jeda di area Fagradalsfjall; seismisitas rendah dan pelepasan gas sisa."
       },
-      "report_date": "12/11/2026",
+      "report_date": "13/11/2026",
+      "source": "IMO"
+    },
+    "Svartsengi": {
+      "alert": {
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
+      },
+      "color": "#e67e22",
+      "status": {
+        "pt-br": "Erupção efusiva ativa na fileira de crateras Sundhnúkur com fluxos de lava e emissão de gases.",
+        "en": "Active effusive eruption along the Sundhnúkur crater row with lava flows and gas emissions.",
+        "es": "Erupción efusiva activa en la hilera de cráteres Sundhnúkur con flujos de lava y emisión de gases.",
+        "id": "Erupsi efusif aktif di deretan kawah Sundhnúkur dengan aliran lava dan emisi gas."
+      },
+      "report_date": "15/11/2026",
       "source": "IMO"
     },
     "Katla": {
@@ -248,12 +265,12 @@
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Vulcão subglacial em repouso. Sismicidade de fundo dentro dos parâmetros normais sem sinais de deformação magmática.",
-        "en": "Subglacial volcano at rest. Baseline background seismicity within normal parameters with no ground deformation.",
-        "es": "Volcán subglacial en reposo. Sismicidad de fondo dentro de parámetros normales sin deformación magmática.",
-        "id": "Gunung api subglasial dalam kondisi tenang. Seismisitas latar belakang dalam batas normal tanpa deformasi."
+        "pt-br": "Estado calmo sob a geleira Mýrdalsjökull; sismicidade dentro das variações normais de base.",
+        "en": "Quiet state under Mýrdalsjökull glacier; seismicity within normal baseline variations.",
+        "es": "Estado calmo bajo el glaciar Mýrdalsjökull; sismicidad dentro de las variaciones normales de base.",
+        "id": "Kondisi tenang di bawah gletser Mýrdalsjökull; seismisitas dalam variasi normal latar belakang."
       },
-      "report_date": "11/11/2026",
+      "report_date": "14/11/2026",
       "source": "IMO"
     },
     "Yellowstone": {
@@ -265,10 +282,10 @@
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Nível Normal: atividade hidrotermal padrão, sismicidade de fundo e deformação dentro dos níveis históricos normais.",
-        "en": "Normal Level: standard hydrothermal activity, baseline background seismicity, and deformation within historical norms.",
-        "es": "Nivel Normal: actividad hidrotermal habitual, sismicidad de fondo y deformación dentro de los rangos históricos.",
-        "id": "Tingkat Normal: aktivitas hidrothermal standar, seismisitas latar belakang dan deformasi dalam batas normal."
+        "pt-br": "Atividade em nível de base normal; desgaseificação hidrotermal típica e sismicidade de fundo habitual.",
+        "en": "Normal baseline activity level; typical hydrothermal degassing and standard background seismicity.",
+        "es": "Nivel de actividad de base normal; desgasificación hidrotermal típica y sismicidad de fondo habitual.",
+        "id": "Tingkat aktivitas latar belakang normal; pelepasan gas hidrotermal tipikal dan seismisitas biasa."
       },
       "report_date": "01/11/2026",
       "source": "USGS"
@@ -282,12 +299,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Anak Krakatau Nível II (Waspada): explosões estrombolianas ocasionais com pequenas plumas de cinza e desgaseificação constante.",
-        "en": "Anak Krakatau Level II (Waspada): occasional strombolian explosive events with minor ash plumes and constant degassing.",
-        "es": "Anak Krakatau Nivel II (Waspada): explosiones estrombolianas ocasionales con plumas de ceniza menores y desgasificación.",
-        "id": "Anak Krakatau Tingkat II (Waspada): erupsi eksplosif strombolian sesekali dengan kolom abu tipis dan pelepasan gas."
+        "pt-br": "Erupções estrombolianas intermitentes na ilha de Anak Krakatau com emissão de cinzas e desgaseificação.",
+        "en": "Intermittent Strombolian eruptions at Anak Krakatau island with ash emission and degassing.",
+        "es": "Erupciones estrombolianas intermitentes en la isla Anak Krakatau con emisión de ceniza y desgasificación.",
+        "id": "Erupsi strombolian intermiten di pulau Anak Krakatau dengan emisi abu dan pelepasan gas."
       },
-      "report_date": "13/11/2026",
+      "report_date": "14/11/2026",
       "source": "PVMBG"
     },
     "Spurr": {
@@ -299,29 +316,29 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Alerta de aviso (Yellow): sismicidade vulcânica e deformação do terreno moderadamente elevadas sob o edifício vulcânico.",
-        "en": "Advisory (Yellow): moderately elevated volcanic seismicity and ground deformation detected beneath the volcano structure.",
-        "es": "Alerta (Amarillo): sismicidad volcánica y deformación del terreno moderadamente elevadas bajo la estructura volcánica.",
-        "id": "Waspada (Kuning): peningkatan seismisitas vulkanik dan deformasi tanah terdeteksi di bawah struktur gunung api."
+        "pt-br": "Sismicidade vulcânica elevada e deformação no cume; desgaseificação fumarólica sob monitoramento.",
+        "en": "Elevated volcanic seismicity and summit ground deformation; fumarolic degassing under active watch.",
+        "es": "Sismicidad volcánica elevada y deformación en la cumbre; desgasificación fumarólica bajo monitoreo.",
+        "id": "Seismisitas vulkanik meningkat dan deformasi tanah puncak; pelepasan gas fumarol dalam pemantauan."
       },
-      "report_date": "12/11/2026",
-      "source": "USGS / AVO"
+      "report_date": "13/11/2026",
+      "source": "USGS"
     },
     "Santa María": {
       "alert": {
-        "pt-br": "LARANJA",
-        "en": "ORANGE",
-        "es": "NARANJA",
-        "id": "SIAGA"
+        "pt-br": "AMARELO",
+        "en": "YELLOW",
+        "es": "AMARILLO",
+        "id": "WASPADA"
       },
-      "color": "#e67e22",
+      "color": "#f1c40f",
       "status": {
-        "pt-br": "Complexo Santiaguito: extrusão ativa do domo de lava com colapsos de blocos, fluxos piroclásticos fracos e cinzas.",
-        "en": "Santiaguito complex: active lava dome extrusion featuring block collapses, weak pyroclastic flows, and constant ash venting.",
-        "es": "Complejo Santiaguito: extrusión activa del domo de lava con colapsos de bloques, flujos piroclásticos y ceniza.",
-        "id": "Kompleks Santiaguito: ekstrusi kubah lava aktif disertai guguran blok lava, awan panas kecil, dan pelepasan abu."
+        "pt-br": "Extrusão efusiva no domo Santiaguito com explosões fracas a moderadas e derrocadas de blocos incandescentes.",
+        "en": "Effusive extrusion at Santiaguito dome with weak to moderate explosions and incandescent block avalanches.",
+        "es": "Extrusión efusiva en el domo Santiaguito con explosiones débiles a moderadas y avalanchas de bloques incandescentes.",
+        "id": "Ekstrusi efusif di kubah Santiaguito dengan eksplosi lemah hingga sedang dan guguran blok pijar."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "INSIVUMEH"
     },
     "Bromo": {
@@ -333,12 +350,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Nível II (Waspada): desgaseificação craterica forte com emissão de vapor branco e tremores vulcânicos contínuos.",
-        "en": "Level II (Waspada): strong crater degassing emitting dense white plumes accompanied by continuous volcanic tremor.",
-        "es": "Nivel II (Waspada): desgasificación intensa en el cráter con emisión de vapor blanco y temblor volcánico continuo.",
-        "id": "Tingkat II (Waspada): pelepasan gas kawah yang kuat memancarkan asap putih tebal disertai tremor kontinu."
+        "pt-br": "Desgaseificação contínua de vapor de água e enxofre na cratera com tremor vulcânico constante.",
+        "en": "Continuous degassing of water vapor and sulfur in the crater with constant volcanic tremor.",
+        "es": "Desgasificación continua de vapor de agua y azufre en el cráter con temblor volcánico constante.",
+        "id": "Pelepasan gas menerus berupa uap air dan belerang di kawah dengan tremor vulkanik konstan."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "PVMBG"
     },
     "Campi Flegrei": {
@@ -350,30 +367,13 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Atenção (Giallo): bradisseísmo ativo com sismicidade frequente de baixa magnitude e intensa desgasificação fumarólica na Solfatara.",
-        "en": "Yellow Alert: active bradyseism with frequent low-magnitude earthquakes and intense fumarolic degassing at Solfatara.",
-        "es": "Alerta Amarilla: bradiseísmo activo con sismicidad frecuente de baja magnitud e intensa desgasificación fumarólica.",
-        "id": "Waspada: bradiseisme aktif dengan gempa bumi bermagnitudo rendah yang sering dan pelepasan gas fumarol yang intens."
+        "pt-br": "Crise de bradisseísmo ativa; enxames sísmicos superficiais, elevação do solo e intensa desgaseificação hidrotermal.",
+        "en": "Active bradyseismic crisis; shallow seismic swarms, ground uplift, and intense hydrothermal degassing.",
+        "es": "Crisis de bradiseísmo activa; enjambres sísmicos superficiales, elevación del suelo e intensa desgasificación hidrotermal.",
+        "id": "Krisis bradiseisme aktif; kawanan gempa dangkal, pengangkatan tanah, dan pelepasan gas hidrotermal intensif."
       },
-      "report_date": "13/11/2026",
+      "report_date": "15/11/2026",
       "source": "INGV"
-    },
-    "Svartsengi": {
-      "alert": {
-        "pt-br": "LARANJA",
-        "en": "ORANGE",
-        "es": "NARANJA",
-        "id": "SIAGA"
-      },
-      "color": "#e67e22",
-      "status": {
-        "pt-br": "Erupção de fissura efusiva recorrente na península de Reykjanes com fluxos ativos de lava e acumulação magmática contínua.",
-        "en": "Recurrent effusive fissure eruption on Reykjanes peninsula featuring active lava flows and ongoing magma accumulation.",
-        "es": "Erupción de fisura efusiva recurrente en la península de Reykjanes con flujos de lava activos y acumulación magmática.",
-        "id": "Erupsi retakan efusif berulang di semenanjung Reykjanes dengan aliran lava aktif dan akumulasi magma."
-      },
-      "report_date": "14/11/2026",
-      "source": "IMO"
     },
     "Tokachi": {
       "alert": {
@@ -384,29 +384,29 @@
       },
       "color": "#2ecc71",
       "status": {
-        "pt-br": "Nível de alerta 1: repouso relativo com desgaseificação fumarólica fraca de rotina e sismicidade em nível de fundo.",
-        "en": "Alert Level 1: baseline status with weak routine fumarolic degassing and normal background seismic activity.",
-        "es": "Nivel de alerta 1: reposo relativo con desgasificación fumarólica débil habitual y sismicidad de nivel base.",
-        "id": "Tingkat Peringatan 1: kondisi tenang dengan pelepasan gas fumarol lemah dan aktivitas seismik latar belakang normal."
+        "pt-br": "Estado de calma geral; desgaseificação fumarólica fraca na zona da cratera e sismicidade normal.",
+        "en": "General quiet status; weak fumarolic degassing in the crater area and normal baseline seismicity.",
+        "es": "Estado de calma general; desgasificación fumarólica débil en la zona del cráter y sismicidad normal.",
+        "id": "Status tenang; pelepasan gas fumarol lemah di area kawah dan seismisitas latar belakang normal."
       },
-      "report_date": "10/11/2026",
+      "report_date": "11/11/2026",
       "source": "JMA"
     },
     "Whakaari / White Island": {
       "alert": {
-        "pt-br": "AMARELO",
-        "en": "YELLOW",
-        "es": "AMARILLO",
-        "id": "WASPADA"
+        "pt-br": "LARANJA",
+        "en": "ORANGE",
+        "es": "NARANJA",
+        "id": "SIAGA"
       },
-      "color": "#f1c40f",
+      "color": "#e67e22",
       "status": {
-        "pt-br": "Nível 2 de alerta: emissão menor de cinzas vulcânicas, desgaseificação de vapor e dióxido de enxofre em nível elevado.",
-        "en": "Volcanic Alert Level 2: minor volcanic ash emission, steam venting, and elevated levels of sulfur dioxide gas.",
-        "es": "Nivel 2 de alerta: emisión menor de ceniza volcánica, desgasificación de vapor y niveles elevados de dióxido de azufre.",
-        "id": "Tingkat Peringatan Vulkanik 2: emisi abu vulkanik tipis, pelepasan uap, dan peningkatan gas belerang dioksida."
+        "pt-br": "Emissões vulcânicas de cinzas em menor escala, forte desgaseificação gasosa e inquietação magmática.",
+        "en": "Minor volcanic ash emissions, strong gas flux degassing, and moderate magmatic unrest.",
+        "es": "Emisiones menores de ceniza volcánica, fuerte desgasificación y agitación magmática moderada.",
+        "id": "Emisi abu vulkanik skala kecil, fluks pelepasan gas kuat, dan kegelisahan magmatik."
       },
-      "report_date": "12/11/2026",
+      "report_date": "14/11/2026",
       "source": "GeoNet"
     },
     "Kirishima": {
@@ -418,12 +418,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Nível de alerta 2 (Shinmoedake/Ohashi): tremor vulcânico ocasional e inflação do solo com desgaseificação pontual.",
-        "en": "Alert Level 2 (Shinmoedake/Ohashi): occasional volcanic tremor and minor ground inflation with localized degassing.",
-        "es": "Nivel de alerta 2 (Shinmoedake/Ohashi): temblor volcánico ocasional y leve inflación del terreno con desgasificación.",
-        "id": "Tingkat Peringatan 2: tremor vulkanik sesekali dan inflasi tanah ringan disertai pelepasan gas lokal."
+        "pt-br": "Inquietação vulcânica moderada com aumento na sismicidade vulcânica e desgaseificação no Shinmoedake.",
+        "en": "Moderate volcanic unrest with increased volcanic seismicity and fumarolic degassing at Shinmoedake.",
+        "es": "Agitación volcánica moderada con aumento en la sismicidad volcánica y desgasificación en Shinmoedake.",
+        "id": "Kegelisahan vulkanik sedang dengan peningkatan seismisitas vulkanik dan pelepasan gas di Shinmoedake."
       },
-      "report_date": "11/11/2026",
+      "report_date": "13/11/2026",
       "source": "JMA"
     },
     "Pacaya": {
@@ -435,12 +435,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Desgaseificação constante no cráter Mackenney com fracas explosões estrombolianas e tremores vulcânicos de baixa energia.",
-        "en": "Constant degassing at Mackenney crater accompanied by weak strombolian bursts and low-energy volcanic tremor.",
-        "es": "Desgasificación constante en el cráter Mackenney con débiles explosiones estrombolianas y temblor volcánico bajo.",
-        "id": "Pelepasan gas konstan di kawah Mackenney disertai lontaran strombolian lemah dan tremor vulkanik rendah."
+        "pt-br": "Desgaseificação fumarólica persistente na cratera Mackenney com explosões estrombolianas esporádicas.",
+        "en": "Persistent fumarolic degassing at Mackenney crater with sporadic weak Strombolian explosions.",
+        "es": "Desgasificación fumarólica persistente en el cráter Mackenney con explosiones estrombolianas esporádicas.",
+        "id": "Pelepasan gas fumarol persisten di kawah Mackenney dengan eksplosi strombolian sporadis."
       },
-      "report_date": "13/11/2026",
+      "report_date": "14/11/2026",
       "source": "INSIVUMEH"
     },
     "Mayon": {
@@ -452,12 +452,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Nível de Alerta 1: desgaseificação moderada da cratera, brilho noturno fraco e sismicidade vulcânica baixa.",
-        "en": "Alert Level 1: moderate crater degassing, weak crater glow at night, and low-level volcanic seismicity.",
-        "es": "Nivel de Alerta 1: desgasificación moderada en el cráter, incandescencia nocturna débil y sismicidad baja.",
-        "id": "Tingkat Peringatan 1: pelepasan gas kawah sedang, pijar kawah lemah pada malam hari, dan seismisitas rendah."
+        "pt-br": "Nível de inquietação baixo a moderado; desgaseificação na cratera e incandescência noturna ocasional.",
+        "en": "Low to moderate unrest level; crater degassing and occasional crater night incandescence.",
+        "es": "Nivel de agitación bajo a moderado; desgasificación en el cráter e incandescencia nocturna ocasional.",
+        "id": "Tingkat kegelisahan rendah hingga sedang; pelepasan gas di kawah dan kawah berpijar malam hari sesekali."
       },
-      "report_date": "14/11/2026",
+      "report_date": "15/11/2026",
       "source": "PHIVOLCS"
     },
     "Puracé": {
@@ -469,12 +469,12 @@
       },
       "color": "#f1c40f",
       "status": {
-        "pt-br": "Estado Amarelo: sismicidade sustentada associada ao fraturamento de rochas e movimentação de fluidos com emissão de gases.",
-        "en": "Yellow State: sustained seismicity related to rock fracturing and fluid movement accompanied by volcanic gas emissions.",
-        "es": "Estado Amarillo: sismicidad sostenida asociada a fracturamiento de roca y dinámica de fluidos con emisión de gases.",
-        "id": "Status Kuning: seismisitas berkelanjutan terkait fraktur batuan dan pergerakan fluida disertai emisi gas vulkanik."
+        "pt-br": "Sismicidade vulcano-tectônica elevada e aumentos na desgaseificação de gases vulcânicos na cratera.",
+        "en": "Elevated volcano-tectonic seismicity and increased volcanic gas degassing at the summit crater.",
+        "es": "Sismicidad volcán-tectónica elevada y aumentos en la desgasificación de gases volcánicos en el cráter.",
+        "id": "Seismisitas vulkano-tektonik meningkat dan peningkatan pelepasan gas vulkanik di kawah puncak."
       },
-      "report_date": "12/11/2026",
+      "report_date": "14/11/2026",
       "source": "SGC"
     }
   }
